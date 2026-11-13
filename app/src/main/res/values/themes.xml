@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A minimal XML theme. With Compose, real styling lives in Kotlin (ui/theme),
+     but Android still needs an XML theme for the window itself before Compose
+     starts drawing — this avoids a white flash at launch. -->
+<resources>
+    <style name="Theme.CountryExplorer" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

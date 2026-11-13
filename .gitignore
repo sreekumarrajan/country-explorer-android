@@ -1,0 +1,11 @@
+*.iml
+.gradle/
+local.properties      # machine-specific SDK path — must stay out of git
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab

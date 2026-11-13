@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- All user-facing text lives here, not in code. This is Android's built-in
+     i18n: add res/values-fr/strings.xml and the OS picks it automatically. -->
+<resources>
+    <string name="app_name">Country Explorer</string>
+    <string name="search_hint">Search countries</string>
+    <string name="favorites_only">Favorites only</string>
+    <string name="retry">Retry</string>
+    <string name="add_favorite">Add to favorites</string>
+    <string name="remove_favorite">Remove from favorites</string>
+    <string name="back">Back</string>
+    <string name="error_generic">Could not load countries.</string>
+    <string name="empty_search">No countries match your search.</string>
+    <string name="empty_favorites">No favorites yet. Tap a heart to add one.</string>
+</resources>

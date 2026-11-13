@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============================================================================
+   AndroidManifest.xml — the app's declaration to the OS.
+   Closest web analogy: index.html + a PWA manifest + CSP, combined.
+   It declares: permissions requested, which Activities exist, and which one
+   is the launcher entry point.
+  ============================================================================
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Without this, every network call fails. The web gives you fetch() for
+         free; on Android network access is a declared permission. INTERNET is
+         "normal", so it's granted at install with no user prompt. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CountryExplorerApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CountryExplorer">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CountryExplorer">
+            <!-- This intent-filter is what makes the app appear in the launcher
+                 and makes this Activity the entry point (like main.tsx). -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
